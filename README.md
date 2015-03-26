@@ -1,5 +1,5 @@
 # About
-Flaxton Proxy server is network traffic proxy server for managing multiple servers TCP traffic. This proxy server is written in Go programming language (<a href="http://golang.org" target="_blank">http://golang.org</a>) using <a href="https://github.com/flaxtonio/fntp"  target="_blank">FNTP</a> protocol implementation. <br/>
+Flaxton Proxy server is a network traffic proxy server for managing multiple servers TCP traffic. This proxy server is written in Go programming language (<a href="http://golang.org" target="_blank">http://golang.org</a>) using <a href="https://github.com/flaxtonio/fntp"  target="_blank">FNTP</a> protocol implementation. <br/>
 <b> Flaxton Proxy server is a part of <a href="http://flaxton.io" target="_blank">flaxton.io</a> cloud server load balancer software. </b>
 
 # How it Works
