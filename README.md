@@ -1,13 +1,13 @@
 # About
-Flaxton Proxy server is network traffic proxy server for managing multiple servers TCP trafic. This proxy server written in Go programming language (<a href="http://golang.org" target="_blank">http://golang.org</a>) using <a href="https://github.com/flaxtonio/fntp"  target="_blank">FNTP</a> protocol implementation.<br/>
-<b>Flaxton Proxy server is a part of <a href="http://flaxton.io" target="_blank">flaxton.io</a> cloud server load balancer software.</b>
+Flaxton Proxy server is network traffic proxy server for managing multiple servers TCP traffic. This proxy server is written in Go programming language (<a href="http://golang.org" target="_blank">http://golang.org</a>) using <a href="https://github.com/flaxtonio/fntp"  target="_blank">FNTP</a> protocol implementation. <br/>
+<b> Flaxton Proxy server is a part of <a href="http://flaxton.io" target="_blank">flaxton.io</a> cloud server load balancer software. </b>
 
 # How it Works
-Almost all internet traffic works using TCP. To handle TCP trafic Flaxton Proxy is receiving TCP and converts it to FNTP for better communication between multiple cloud server in load balancing mode, and after execution Flaxton Proxy getting response from server using FNTP protocol and sending it back to client as a TCP trafic.
+Almost all internet traffic works using TCP. To handle TCP traffic Flaxton Proxy receives TCP and converts it to FNTP for better communication between multiple cloud servers in load balancing mode, and after the execution Flaxton Proxy gets response from a server using FNTP protocol and sending it back to client as a TCP traffic. 
 <img src="http://flaxton.io/img/proxyser.gif" />
 
 # "Hello World"
-<b>Front Proxy - This proxy will handle TCP requests from clients and will transfer it to other server using FNTP </b>
+<b>Front Proxy - this proxy will handle TCP requests from clients and will transfer it to other server using FNTP </b>
 ```go
 package main
 
@@ -23,7 +23,7 @@ func main() {
   proxy.Start()
 }
 ```
-<b>Server Proxy - This proxy will handle FNTP requests and will proxy it to Web Server application using TCP</b>
+<b>Server Proxy - this proxy will handle FNTP requests and will proxy it to Web Server application using TCP</b>
 ```go
 package main
 
@@ -46,4 +46,4 @@ func main() {
 	fmt.Println(proxy)
 }
 ```
-<b>Read <a href="https://github.com/flaxtonio/flaxton-proxy/blob/master/tests/proxyTest.go" target="_blank"><code>tests/proxyTest.go</code></a> file for more detailed example</b>
+<b>Read <a href="https://github.com/flaxtonio/flaxton-proxy/blob/master/tests/proxyTest.go" target="_blank"><code>tests/proxyTest.go</code></a> file for more detailed example.</b>
